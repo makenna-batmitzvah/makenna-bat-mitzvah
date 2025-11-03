@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Makenna's Bat Mitzvah Celebration</title>
     <style>
-        /* ==== COLORS - EASY TO CHANGE ==== */
         :root {
             --main-color: #6366f1;
             --accent-color: #ec4899;
@@ -15,7 +14,6 @@
             --text-light: #6b7280;
         }
 
-        /* ==== BASIC LAYOUT - DON'T CHANGE ==== */
         * {
             margin: 0;
             padding: 0;
@@ -23,7 +21,7 @@
         }
 
         body {
-            font-family: 'Arial', sans-serif;
+            font-family: Arial, sans-serif;
             line-height: 1.6;
             color: var(--text-dark);
             background-color: var(--background);
@@ -36,7 +34,6 @@
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
 
-        /* ==== HEADER SECTION ==== */
         .header {
             background: var(--main-color);
             color: white;
@@ -64,7 +61,6 @@
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
 
-        /* ==== NAVIGATION ==== */
         .nav {
             background: #f1f5f9;
             padding: 20px;
@@ -85,7 +81,6 @@
             color: white;
         }
 
-        /* ==== CONTENT SECTIONS ==== */
         .content {
             padding: 40px;
         }
@@ -103,7 +98,6 @@
             padding-bottom: 10px;
         }
 
-        /* ==== INFO CARDS ==== */
         .cards {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -114,4 +108,385 @@
         .card {
             background: var(--card-background);
             border: 1px solid #e5e7eb;
-            
+            border-radius: 10px;
+            padding: 25px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .card h3 {
+            color: var(--accent-color);
+            margin-bottom: 15px;
+            font-size: 1.2rem;
+        }
+
+        .card p {
+            margin-bottom: 10px;
+        }
+
+        .highlight {
+            font-weight: bold;
+            color: var(--main-color);
+        }
+
+        .transport-note {
+            background: #eff6ff;
+            border-left: 4px solid var(--main-color);
+            padding: 12px;
+            margin-top: 15px;
+            border-radius: 4px;
+            font-size: 0.95rem;
+        }
+
+        .map-section {
+            background: #f8fafc;
+            padding: 30px;
+            border-radius: 10px;
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .map-section iframe {
+            border-radius: 8px;
+            margin: 20px 0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .location-links {
+            margin-top: 20px;
+        }
+
+        .location-links a {
+            color: var(--main-color);
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .location-links a:hover {
+            color: var(--accent-color);
+        }
+
+        .feature-photo {
+            width: 100%;
+            margin: 50px 0;
+            text-align: center;
+        }
+
+        .feature-photo img {
+            width: 100%;
+            max-width: 600px;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+        }
+
+        .rsvp-section {
+            background: var(--accent-color);
+            color: white;
+            padding: 40px;
+            text-align: center;
+            margin: 30px 0;
+            border-radius: 10px;
+        }
+
+        .rsvp-button {
+            display: inline-block;
+            background: white;
+            color: var(--accent-color);
+            padding: 12px 30px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 15px;
+        }
+
+        .rsvp-button:hover {
+            background: #f3f4f6;
+        }
+
+        .footer {
+            background: var(--text-dark);
+            color: white;
+            text-align: center;
+            padding: 30px;
+        }
+
+        .footer p {
+            margin: 5px 0;
+        }
+
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2rem;
+            }
+
+            .header-photo {
+                width: 200px;
+                height: 200px;
+            }
+
+            .nav a {
+                display: block;
+                margin: 5px 0;
+            }
+
+            .content {
+                padding: 20px;
+            }
+
+            .cards {
+                grid-template-columns: 1fr;
+            }
+
+            .feature-photo img {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <img src="https://i.imgur.com/1ywquPN.jpeg" alt="Makenna" class="header-photo">
+            <h1>Makenna's Bat Mitzvah</h1>
+            <p class="date">November 21-23, 2025 | St Thomas, US Virgin Islands</p>
+        </header>
+
+        <nav class="nav">
+            <a href="#events">Events</a>
+            <a href="#location">Location</a>
+            <a href="#travel">Travel</a>
+            <a href="#schedule">Schedule</a>
+            <a href="#what-to-bring">What to Bring</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <div class="content">
+            <section id="events" class="section">
+                <h2>Weekend Events</h2>
+                <div class="cards">
+                    <div class="card">
+                        <h3>Friday Welcome Dinner</h3>
+                        <p><span class="highlight">When:</span> Friday, November 21st, 2025</p>
+                        <p><span class="highlight">Time:</span> 6:30 PM</p>
+                        <p><span class="highlight">Where:</span> Mims Seaside Bistro, St Thomas</p>
+                        <p><span class="highlight">Dress Code:</span> Resort casual</p>
+                        <div class="transport-note">
+                            <strong>Roundtrip Transportation:</strong> Provided from the Westin Hotel to the restaurant
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <h3>Saturday Bat Mitzvah Service</h3>
+                        <p><span class="highlight">When:</span> Saturday, November 22nd, 2025</p>
+                        <p><span class="highlight">Guests arrive:</span> 9:30 AM</p>
+                        <p><span class="highlight">Service begins:</span> 10:00 AM</p>
+                        <p><span class="highlight">Where:</span> The Hebrew Congregation of St Thomas</p>
+                        <p><span class="highlight">Dress Code:</span> Island Chic</p>
+                        <p><span class="highlight">Followed by:</span> Kiddush reception (concludes around 12:30 PM)</p>
+                        <div class="transport-note">
+                            <strong>Transportation:</strong> Provided from the Westin Hotel to the synagogue
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cards">
+                    <div class="card">
+                        <h3>Saturday Afternoon Party Beachside</h3>
+                        <p><span class="highlight">When:</span> Saturday, November 22nd, 2025</p>
+                        <p><span class="highlight">Time:</span> Afternoon (after synagogue service)</p>
+                        <p><span class="highlight">Where:</span> Elysian Beach Resort, St Thomas</p>
+                        <p><span class="highlight">Attire:</span> Wear your synagogue outfit to the party</p>
+                        <p><span class="highlight">Optional:</span> Bring swimwear for a dip at the end of the party</p>
+                        <div class="transport-note">
+                            <strong>Transportation:</strong> From synagogue to Elysian Beach Resort, then back to Westin Hotel
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <h3>Sunday Boat Trip</h3>
+                        <p><span class="highlight">When:</span> Sunday, November 23rd, 2025</p>
+                        <p><span class="highlight">Departure:</span> 11:15 AM from the Westin Hotel</p>
+                        <p><span class="highlight">Time:</span> 12:00 PM - 4:00 PM (on the water)</p>
+                        <p><span class="highlight">Duration:</span> 4-hour Caribbean boat adventure</p>
+                        <p><span class="highlight">What to Bring:</span> Swimwear, sunscreen, hat, water shoes</p>
+                        <div class="transport-note">
+                            <strong>Transportation:</strong> Departs from the Westin Hotel at 11:15 AM
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="location" class="section">
+                <h2>Location and Directions</h2>
+                <div class="map-section">
+                    <h3>St Thomas Locations</h3>
+                    
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3021.234567890!2d-64.9307!3d18.3419!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8c051234567890ab%3A0x1234567890abcdef!2sCharlotte%20Amalie%2C%20St%20Thomas%2C%20USVI!5e0!3m2!1sen!2sus!4v1234567890123!5m2!1sen!2sus" 
+                        width="100%" 
+                        height="300" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy">
+                    </iframe>
+
+                    <div class="location-links">
+                        <p><strong>Synagogue:</strong> <a href="https://maps.google.com/maps?q=The+Hebrew+Congregation+of+St+Thomas" target="_blank">The Hebrew Congregation of St Thomas</a></p>
+                        
+                        <p><strong>Hotel Headquarters:</strong> <a href="https://maps.google.com/maps?q=The+Westin+St+Thomas" target="_blank">The Westin St Thomas</a></p>
+                        
+                        <p><strong>Friday Dinner:</strong> <a href="https://maps.google.com/maps?q=Mims+Seaside+Bistro+St+Thomas" target="_blank">Mims Seaside Bistro</a></p>
+
+                        <p><strong>Beach Party:</strong> <a href="https://maps.google.com/maps?q=Elysian+Beach+Resort+St+Thomas" target="_blank">Elysian Beach Resort</a></p>
+                        
+                        <p><strong>Boat Trip:</strong> Departs from the Westin Hotel</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="travel" class="section">
+                <h2>Travel and Accommodations</h2>
+                <div class="cards">
+                    <div class="card">
+                        <h3>Weekend Headquarters - The Westin St Thomas</h3>
+                    </div>
+
+                    <div class="card">
+                        <h3>Ground Transportation</h3>
+                        <p><span class="highlight">From Airport:</span> Taxis are located just outside baggage claim. Most common are shared vehicles.</p>
+                        <p><span class="highlight">Cost:</span> Approximately $15 per person (plus small baggage fee)</p>
+                        <p><span class="highlight">Travel Time:</span> 20-30 minutes to the Westin</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h3>Transportation for Weekend Events</h3>
+                    <p><span class="highlight">All transportation provided from the Westin Hotel:</span></p>
+                    <p>Friday: Roundtrip to Mims Seaside Bistro</p>
+                    <p>Saturday: To synagogue, then to Elysian Beach Resort, then back to Westin</p>
+                    <p>Sunday: Boat trip departs from Westin at 11:15 AM</p>
+                </div>
+            </section>
+
+            <section id="schedule" class="section">
+                <h2>Weekend Schedule</h2>
+                <div class="card">
+                    <h3>Full Weekend Timeline</h3>
+                    
+                    <p><span class="highlight">Friday, November 21st</span></p>
+                    <p><span class="highlight">6:30 PM</span> - Welcome dinner at Mims Seaside Bistro</p>
+                    <p><span class="highlight">Dress code:</span> Resort casual</p>
+                    <p><span class="highlight">Transportation:</span> Roundtrip from Westin</p>
+                    
+                    <p style="margin-top: 20px;"><span class="highlight">Saturday, November 22nd</span></p>
+                    <p><span class="highlight">Morning</span> - Transportation departs from Westin to synagogue</p>
+                    <p><span class="highlight">9:30 AM</span> - Guests arrive at Hebrew Congregation</p>
+                    <p><span class="highlight">10:00 AM</span> - Bat Mitzvah service begins</p>
+                    <p><span class="highlight">11:30 AM</span> - Service concludes, kiddush reception</p>
+                    <p><span class="highlight">12:30 PM</span> - Synagogue celebration ends</p>
+                    <p><span class="highlight">Afternoon</span> - Transportation from synagogue to Elysian Beach Resort</p>
+                    <p><span class="highlight">Afternoon</span> - Party beachside at Elysian Beach Resort</p>
+                    <p><span class="highlight">Later</span> - Transportation from resort back to Westin Hotel</p>
+                    
+                    <p style="margin-top: 20px;"><span class="highlight">Sunday, November 23rd</span></p>
+                    <p><span class="highlight">11:15 AM</span> - Transportation departs Westin for boat trip</p>
+                    <p><span class="highlight">12:00 PM - 4:00 PM</span> - Caribbean boat adventure</p>
+                    <p><span class="highlight">4:15 PM</span> - Return to the Westin. Arrive around 4:30 PM</p>
+                </div>
+            </section>
+
+            <section id="what-to-bring" class="section">
+                <h2>What to Bring</h2>
+                <div class="cards">
+                    <div class="card">
+                        <h3>Friday Dinner</h3>
+                        <p><span class="highlight">Style:</span> Resort casual</p>
+                        <p><span class="highlight">Weather:</span> Tropical - lightweight fabrics ideal</p>
+                        <p><span class="highlight">Footwear:</span> Comfortable shoes for resort dining</p>
+                    </div>
+
+                    <div class="card">
+                        <h3>Synagogue Service</h3>
+                        <p><span class="highlight">Attire:</span> Island Chic</p>
+                        <p><span class="highlight">Men:</span> Lightweight slacks, collared shirts (short sleeve is fine)</p>
+                        <p><span class="highlight">Women:</span> Sun dress or lightweight alternative</p>
+                    </div>
+
+                    <div class="card">
+                        <h3>Afternoon Party Beachside</h3>
+                        <p><span class="highlight">Attire:</span> Wear your synagogue outfit to the party</p>
+                        <p><span class="highlight">Optional Swim:</span> Bring swimwear for a dip at the end of the party</p>
+                        <p><span class="highlight">Bring:</span> Swimsuit, cover-up, flip-flops (optional)</p>
+                    </div>
+                </div>
+
+                <div class="cards">
+                    <div class="card">
+                        <h3>Sunday Boat Trip</h3>
+                        <p><span class="highlight">Swimwear:</span> Wear your bathing suit and cover-up</p>
+                        <p><span class="highlight">Sun Protection:</span> Hat, sunglasses, reef-safe sunscreen</p>
+                    </div>
+
+                    <div class="card">
+                        <h3>General Packing for St Thomas</h3>
+                        <p><span class="highlight">Weather:</span> November is perfect in St Thomas (80 degrees F)</p>
+                        <p><span class="highlight">Pack:</span> Light layers, shorts, sundresses</p>
+                        <p><span class="highlight">Mosquitoes:</span> Bug spray for evening outdoor time</p>
+                    </div>
+                </div>
+            </section>
+
+            <div class="feature-photo">
+                <img src="https://i.imgur.com/JwftY3s.jpeg" alt="Makenna celebration">
+            </div>
+
+            <div class="rsvp-section">
+                <h2>Join Us in Celebrating Makenna!</h2>
+                <p>Please RSVP by October 22nd, 2025</p>
+                <p>Let us know which events you'll attend: Friday dinner, Saturday service and beach party, Sunday boat trip, or all!</p>
+                <a href="mailto:parents@email.com" class="rsvp-button">RSVP Now</a>
+            </div>
+
+            <section id="contact" class="section">
+                <h2>Contact Information</h2>
+                <div class="cards">
+                    <div class="card">
+                        <h3>Makenna's Family</h3>
+                        <p><span class="highlight">Mom - [Name]:</span> [Phone number]<br>
+                        [email@email.com]</p>
+                        <p><span class="highlight">Dad - [Name]:</span> [Phone number]<br>
+                        [email@email.com]</p>
+                    </div>
+
+                    <div class="card">
+                        <h3>Event Questions</h3>
+                        <p><span class="highlight">For questions about:</span></p>
+                        <p>Hotel reservations</p>
+                        <p>Travel arrangements</p>
+                        <p>Transportation schedule</p>
+                        <p>Event details</p>
+                        <p>Dietary restrictions</p>
+                        <p><span class="highlight">Contact:</span> [Contact details TBD]</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <footer class="footer">
+            <p>We can't wait to celebrate with you!</p>
+            <p>Makenna's Bat Mitzvah - November 22nd, 2025 - St Thomas, USVI</p>
+        </footer>
+    </div>
+
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
