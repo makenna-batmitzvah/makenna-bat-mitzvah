@@ -54,6 +54,16 @@
             opacity: 0.9;
         }
 
+        .header-photo {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid white;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
         /* ==== NAVIGATION ==== */
         .nav {
             background: #f1f5f9;
@@ -204,6 +214,11 @@
                 font-size: 2rem;
             }
 
+            .header-photo {
+                width: 120px;
+                height: 120px;
+            }
+
             .nav a {
                 display: block;
                 margin: 5px 0;
@@ -222,6 +237,7 @@
 <body>
     <div class="container">
         <header class="header">
+            <img src="https://i.imgur.com/1ywquPN.jpeg" alt="Makenna" class="header-photo">
             <h1>🎉 Makenna's Bat Mitzvah 🎉</h1>
             <p class="date">November 21-23, 2025 | St Thomas, US Virgin Islands</p>
         </header>
