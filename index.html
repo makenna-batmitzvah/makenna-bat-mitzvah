@@ -161,3 +161,315 @@
 
         .location-links {
             margin-top: 20px;
+        }
+
+        .location-links a {
+            color: var(--main-color);
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .location-links a:hover {
+            color: var(--accent-color);
+        }
+
+        .feature-photo {
+            width: 100%;
+            margin: 50px 0;
+            text-align: center;
+        }
+
+        .feature-photo img {
+            width: 100%;
+            max-width: 600px;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+        }
+
+        .footer {
+            background: var(--text-dark);
+            color: white;
+            text-align: center;
+            padding: 30px;
+        }
+
+        .footer p {
+            margin: 5px 0;
+        }
+
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2rem;
+            }
+
+            .header-photo {
+                width: 250px;
+                height: 250px;
+            }
+
+            .nav a {
+                display: block;
+                margin: 5px 0;
+            }
+
+            .content {
+                padding: 20px;
+            }
+
+            .cards {
+                grid-template-columns: 1fr;
+            }
+
+            .feature-photo img {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <img src="https://i.imgur.com/uRSBC7k.jpeg" alt="Makenna" class="header-photo">
+            <h1>Makenna's Bat Mitzvah</h1>
+            <p class="date">November 21-23, 2025 | St Thomas, US Virgin Islands</p>
+        </header>
+
+        <nav class="nav">
+            <a href="#events">Events</a>
+            <a href="#location">Location</a>
+            <a href="#travel">Travel</a>
+            <a href="#schedule">Schedule</a>
+            <a href="#what-to-bring">What to Bring</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <div class="content">
+            <section id="events" class="section">
+                <h2>Weekend Events</h2>
+                <div class="cards">
+                    <div class="card">
+                        <h3>Friday Welcome Dinner</h3>
+                        <p><span class="highlight">When:</span> Friday, November 21st, 2025</p>
+                        <p><span class="highlight">Time:</span> 6:30 PM</p>
+                        <p><span class="highlight">Where:</span> Mim's Seaside Bistro, St Thomas</p>
+                        <p><span class="highlight">Dress Code:</span> Resort casual</p>
+                        <div class="transport-note">
+                            <strong>Roundtrip Transportation:</strong> Provided from the Westin Hotel to the restaurant
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <h3>Saturday Bat Mitzvah Service</h3>
+                        <p><span class="highlight">When:</span> Saturday, November 22nd, 2025</p>
+                        <p><span class="highlight">Guests arrive:</span> 9:30 AM</p>
+                        <p><span class="highlight">Service begins:</span> 10:00 AM</p>
+                        <p><span class="highlight">Where:</span> The Hebrew Congregation of St Thomas</p>
+                        <p><span class="highlight">Dress Code:</span> Island Chic</p>
+                        <p><span class="highlight">Followed by:</span> Kiddush reception (concludes around 12:30 PM)</p>
+                        <div class="transport-note">
+                            <strong>Transportation:</strong> Provided from the Westin Hotel to the synagogue
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cards">
+                    <div class="card">
+                        <h3>Saturday Afternoon Party Beachside</h3>
+                        <p><span class="highlight">When:</span> Saturday, November 22nd, 2025</p>
+                        <p><span class="highlight">Time:</span> Afternoon (after synagogue service)</p>
+                        <p><span class="highlight">Where:</span> Elysian Beach Resort, St Thomas</p>
+                        <p><span class="highlight">Attire:</span> Wear your synagogue outfit to the party</p>
+                        <p><span class="highlight">Optional:</span> Bring swimwear for a dip at the end of the party</p>
+                        <div class="transport-note">
+                            <strong>Transportation:</strong> From synagogue to Elysian Beach Resort, then back to Westin Hotel
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <h3>Sunday Boat Trip</h3>
+                        <p><span class="highlight">When:</span> Sunday, November 23rd, 2025</p>
+                        <p><span class="highlight">Departure:</span> 11:15 AM from the Westin Hotel</p>
+                        <p><span class="highlight">Time:</span> 12:00 PM - 4:00 PM (on the water)</p>
+                        <p><span class="highlight">Duration:</span> 4-hour Caribbean boat adventure</p>
+                        <p><span class="highlight">What to Bring:</span> Swimwear, sunscreen, hat, flip-flops or water shoes</p>
+                        <div class="transport-note">
+                            <strong>Transportation:</strong> Departs from the Westin Hotel at 11:15 AM
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="location" class="section">
+                <h2>Location and Directions</h2>
+                <div class="map-section">
+                    <h3>St Thomas Locations</h3>
+                    
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3021.234567890!2d-64.9307!3d18.3419!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8c051234567890ab%3A0x1234567890abcdef!2sCharlotte%20Amalie%2C%20St%20Thomas%2C%20USVI!5e0!3m2!1sen!2sus!4v1234567890123!5m2!1sen!2sus" 
+                        width="100%" 
+                        height="300" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy">
+                    </iframe>
+
+                    <div class="location-links">
+                        <p><strong>Synagogue:</strong> <a href="https://maps.google.com/maps?q=The+Hebrew+Congregation+of+St+Thomas" target="_blank">The Hebrew Congregation of St Thomas</a></p>
+                        
+                        <p><strong>Hotel Headquarters:</strong> <a href="https://maps.google.com/maps?q=The+Westin+St+Thomas" target="_blank">The Westin St Thomas</a></p>
+                        
+                        <p><strong>Friday Dinner:</strong> <a href="https://maps.google.com/maps?q=Mims+Seaside+Bistro+St+Thomas" target="_blank">Mim's Seaside Bistro</a></p>
+
+                        <p><strong>Beach Party:</strong> <a href="https://maps.google.com/maps?q=Elysian+Beach+Resort+St+Thomas" target="_blank">Elysian Beach Resort</a></p>
+                        
+                        <p><strong>Boat Trip:</strong> Departs from the Westin Hotel</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="travel" class="section">
+                <h2>Travel and Accommodations</h2>
+                <div class="cards">
+                    <div class="card">
+                        <h3>Ground Transportation</h3>
+                        <p><span class="highlight">From Airport:</span> Taxis are located just outside baggage claim. Most common are shared vehicles.</p>
+                        <p><span class="highlight">Cost:</span> Approximately $15 per person (plus small baggage fee)</p>
+                        <p><span class="highlight">Travel Time:</span> 20-30 minutes to the Westin</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h3>Transportation for Weekend Events</h3>
+                    <p><span class="highlight">All transportation provided from the Westin Hotel:</span></p>
+                    <p>Friday: Roundtrip to Mim's Seaside Bistro; Pickup at 6 PM</p>
+                    <p>Saturday: To synagogue, then to Elysian Beach Resort, then back to Westin; Pickup at 9:15 AM</p>
+                    <p>Sunday: Boat trip; pickup at 11:15 AM</p>
+                </div>
+            </section>
+
+            <section id="schedule" class="section">
+                <h2>Weekend Schedule</h2>
+                <div class="card">
+                    <h3>Full Weekend Timeline</h3>
+                    
+                    <p><span class="highlight">Friday, November 21st</span></p>
+                    <p><span class="highlight">6:00 PM</span> - Depart Westin for welcome dinner</p>
+                    <p><span class="highlight">6:30 PM</span> - Welcome dinner at Mim's Seaside Bistro</p>
+                    <p><span class="highlight">Dress code:</span> Resort casual</p>
+                    <p><span class="highlight">Transportation:</span> Roundtrip from Westin</p>
+                    
+                    <p style="margin-top: 20px;"><span class="highlight">Saturday, November 22nd</span></p>
+                    <p><span class="highlight">9:15 AM</span> - Transportation departs from Westin to synagogue</p>
+                    <p><span class="highlight">9:45 AM</span> - Arrive at Hebrew Congregation</p>
+                    <p><span class="highlight">10:00 AM</span> - Bat Mitzvah service begins</p>
+                    <p><span class="highlight">11:30 AM</span> - Service concludes, kiddush reception</p>
+                    <p><span class="highlight">12:30 PM</span> - Synagogue celebration ends</p>
+                    <p><span class="highlight">Afternoon</span> - Transportation from synagogue to Elysian Beach Resort</p>
+                    <p><span class="highlight">Afternoon</span> - Party beachside at Elysian Beach Resort</p>
+                    <p><span class="highlight">Later</span> - Transportation from resort back to Westin Hotel</p>
+                    
+                    <p style="margin-top: 20px;"><span class="highlight">Sunday, November 23rd</span></p>
+                    <p><span class="highlight">11:15 AM</span> - Transportation departs Westin for boat trip</p>
+                    <p><span class="highlight">12:00 PM - 4:00 PM</span> - Caribbean boat adventure</p>
+                    <p><span class="highlight">4:15 PM</span> - Return to the Westin. Arrive around 4:30 PM</p>
+                </div>
+            </section>
+
+            <section id="what-to-bring" class="section">
+                <h2>What to Bring</h2>
+                <div class="cards">
+                    <div class="card">
+                        <h3>Friday Dinner</h3>
+                        <p><span class="highlight">Style:</span> Resort casual</p>
+                        <p><span class="highlight">Weather:</span> Tropical - lightweight fabrics ideal</p>
+                        <p><span class="highlight">Footwear:</span> Comfortable shoes for resort dining</p>
+                    </div>
+
+                    <div class="card">
+                        <h3>Synagogue Service</h3>
+                        <p><span class="highlight">Attire:</span> Island Chic</p>
+                        <p><span class="highlight">Men:</span> Lightweight slacks, collared shirts (short sleeve is fine)</p>
+                        <p><span class="highlight">Women:</span> Sun dress or lightweight alternative</p>
+                    </div>
+
+                    <div class="card">
+                        <h3>Afternoon Party Beachside</h3>
+                        <p><span class="highlight">Attire:</span> Wear your synagogue outfit to the party</p>
+                        <p><span class="highlight">Optional Swim:</span> Bring swimwear for a dip at the end of the party</p>
+                        <p><span class="highlight">Bring:</span> Swimsuit, cover-up, flip-flops (optional)</p>
+                    </div>
+                </div>
+
+                <div class="cards">
+                    <div class="card">
+                        <h3>Sunday Boat Trip</h3>
+                        <p><span class="highlight">Swimwear:</span> Wear your bathing suit and cover-up</p>
+                        <p><span class="highlight">Sun Protection:</span> Hat, sunglasses, sunscreen, flip-flops or boat shoes</p>
+                    </div>
+
+                    <div class="card">
+                        <h3>General Packing for St Thomas</h3>
+                        <p><span class="highlight">Weather:</span> November is perfect in St Thomas (80 degrees F)</p>
+                        <p><span class="highlight">Pack:</span> Light layers, shorts, sundresses</p>
+                        <p><span class="highlight">Mosquitoes:</span> Bug spray for evening outdoor time</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h3>Extended Trip Recommendations</h3>
+                    
+                    <h4>Restaurants</h4>
+                    <p>Oceana (upscale)</p>
+                    <p>Cutlass and Cane (upscale; At Yacht Haven Grande - short cab from hotel)</p>
+                    <p>13 Restaurant (casual; At Yacht Haven Grande - short cab from hotel)</p>
+                    <p>Pesce (casual)</p>
+                    <p>Pangea (casual)</p>
+                    <p>Lanai at Limetree Beach (casual; short cab from hotel)</p>
+                    <p>Sunset Grill at Secret Harbour Beach Resort (beautiful sunsets, casual beach bar with food + upscale restaurant)</p>
+                    <p>Morgan's Mango (upscale - close to Mongoose Junction on St.John)</p>
+                    <p>La Tapa (upscale - right next to the ferry dock on St. John)</p>
+                    <p>Lovango Rum Bar (casual - short walk from the ferry dock on St. John)</p>
+                    <p>The Longboard (casual - short walk from the ferry dock on St. John)</p>
+                    
+                    <h4>Excursions</h4>
+                    <p><span class="highlight">Magens Bay:</span> Pro Tips: Chairs/umbrellas are available near the beach bar.  For no crowds, head away from the beach bar.  On your way out, ask your taxi to stop at Udder Delight for a boozy (or non-boozy) milkshake.</p>
+                    <p><span class="highlight">Lindquist Bay:</span> Note: There are no food/drink options here.  Bring a picnic.</p>
+                    <p><span class="highlight">St. John:</span> Take the ferry from Red Hook (departs every hour on the hour each way - approx. 20 minute trip). Explore Mongoose Junction.  Grab a sandwich and an Irie Pop.  Walk back to ferry dock and take a taxi to Trunk Bay or Cinnamon Bay.</p>
+                </div>
+            </section>
+
+            <div class="feature-photo">
+                <img src="https://i.imgur.com/P8qH0nt.jpeg" alt="Makenna celebration">
+            </div>
+
+            <section id="contact" class="section">
+                <h2>Contact Information</h2>
+                <div class="card">
+                    <p><span class="highlight">sally:</span> (9XX) XXXX<br>
+                    XXXX@gmail.com</p>
+                    <p><span class="highlight">Gregg:</span> (XXX) XXXXXX<br>
+                    XXXXX@gmail.com</p>
+                    <p style="margin-top: 15px;"><em>*Please contact us with any dietary restrictions</em></p>
+                </div>
+            </section>
+        </div>
+
+        <footer class="footer">
+            <p>We can't wait to celebrate with you!</p>
+            <p>Makenna's Bat Mitzvah - November 22nd, 2025 - St Thomas, USVI</p>
+        </footer>
+    </div>
+
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
